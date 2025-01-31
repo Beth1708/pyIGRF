@@ -48,7 +48,7 @@ def get_coeffs(date):
         print('On return [], []')
         return [], []
     elif date >= 2020.0:
-        if date > 2025.0:
+        if date > 2030.0:
             # not adapt for the model but can calculate
             print('This version of the IGRF is intended for use up to 2030.0.')
             print('values for ' + str(date) + ' will be computed but may be of reduced accuracy')
