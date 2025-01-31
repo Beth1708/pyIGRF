@@ -33,7 +33,7 @@ def load_coeffs(filename):
         return gh
 
 
-gh = load_coeffs(os.path.dirname(os.path.abspath(__file__)) + '/src/igrf13coeffs.txt')
+gh = load_coeffs(os.path.dirname(os.path.abspath(__file__)) + '/src/igrf14coeffs.txt')
 
 
 def get_coeffs(date):
@@ -50,7 +50,7 @@ def get_coeffs(date):
     elif date >= 2020.0:
         if date > 2025.0:
             # not adapt for the model but can calculate
-            print('This version of the IGRF is intended for use up to 2025.0.')
+            print('This version of the IGRF is intended for use up to 2030.0.')
             print('values for ' + str(date) + ' will be computed but may be of reduced accuracy')
         t = date - 2020.0
         tc = 1.0
